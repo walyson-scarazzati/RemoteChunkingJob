@@ -1,10 +1,12 @@
 package com.springbatch.remotechunkingjob.dominio;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import org.apache.logging.log4j.util.Strings;
 
-public class Pessoa {
+public class Pessoa implements Serializable {
+    private static final long serialVersionUID = 12L;
   private int id;
   private String nome;
   private String email;
